@@ -493,6 +493,7 @@ class AbstractTableWriter(TableWriterInterface):
         https://pytablereader.rtfd.io/en/latest/
 
         :param tabledata.TableData value: Input table data.
+        :param is_overwrite_table_name:
         """
 
         self.__clear_preprocess()
@@ -528,6 +529,8 @@ class AbstractTableWriter(TableWriterInterface):
         :param str csv_source:
             Input CSV data source either can be designated CSV text or
             CSV file path.
+
+        :param delimiter:
 
         :Examples:
             :ref:`example-from-csv`

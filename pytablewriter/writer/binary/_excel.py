@@ -174,6 +174,7 @@ class ExcelTableWriter(AbstractBinaryTableWriter):
         if not existed yet.
 
         :param tabledata.TableData value: Input table data.
+        :param is_overwrite_table_name:
         """
 
         super(ExcelTableWriter, self).from_tabledata(value)

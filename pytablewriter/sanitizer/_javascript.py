@@ -128,7 +128,7 @@ def sanitize_js_var_name(var_name, replacement_text=""):
     - Append underscore (``"_"``) at the tail of the name if sanitized name
       is one of the JavaScript reserved names
 
-    :JavaScriptstr filename: Name to sanitize.
+    :param var_name: Name to sanitize.
     :param str replacement_text: Replacement text.
     :return: A replacement string.
     :rtype: str
