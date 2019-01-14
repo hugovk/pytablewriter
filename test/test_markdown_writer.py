@@ -762,7 +762,7 @@ class Test_MarkdownTableWriter_write_table(object):
         out, err = capsys.readouterr()
         print_test_result(expected=expected, actual=out, error=err)
 
-        _ansi_escape = re.compile(r"(\x9b|\x1b\[)[0-?]*[ -\/]*[@-~]", re.IGNORECASE)
+        _ansi_escape = re.compile(r"(\x9b|\x1b\[)[0-?]*[ -/]*[@-~]", re.IGNORECASE)
 
         assert _ansi_escape.sub("", out) == expected
 
