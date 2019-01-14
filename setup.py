@@ -22,7 +22,7 @@ pkg_info = {}
 
 
 def need_pytest():
-    return set(["pytest", "test", "ptr"]).intersection(sys.argv)
+    return {"pytest", "test", "ptr"}.intersection(sys.argv)
 
 
 def get_release_command_class():
