@@ -17,7 +17,6 @@ exclude = '''
     | dist
 )/
 | docs/conf.py
-| pytablewriter/_typing.py
 | setup.py
 '''
 target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
@@ -45,7 +44,6 @@ skip_glob = [
     '*/.eggs/*',
     '*/.pytype/*',
     '*/.tox/*',
-    'pytablewriter/_typing.py',
 ]
 
 [tool.coverage.run]
@@ -64,9 +62,6 @@ exclude_lines = [
     'abstractproperty',
     'abstractclassmethod',
     'warnings.warn',
-]
-omit = [
-    'pytablewriter/_typing.py',
 ]
 
 [tool.mypy]
